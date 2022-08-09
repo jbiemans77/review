@@ -78,8 +78,6 @@ void blur(int height, int width, RGBTRIPLE image[height][width])
 // Find edges of image
 void edges(int height, int width, RGBTRIPLE image[height][width])
 {
-    /* This is only here because it has to be due to the way the problem was setup.
-    These could have been called directly from the switch statement in filter.c */
     SetWidthAndHeightGlobalVariables(width, height);
     LoopThroughPixels("edges", image);
 
